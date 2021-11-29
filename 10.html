@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+           // let fun = {};
+
+          //  function A() { return fun; }
+        //    function B() { return fun; }
+
+
+        //    alert( new A() == new B() );
+
+            function nn(startingValue){
+                this.value = startingValue;
+                this.read = function(){
+                    this.value += prompt('Введите число чтобы добавить его к текущему значению: '); 
+                };
+            }
+            let fn = new nn(1);
+            fn.read();
+            alert(fn.value);
+        </script>
+    </body>
+</html>
